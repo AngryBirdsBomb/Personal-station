@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+body{background:url(img/8694a4c27d1ed21bc6b8107ead6eddc451da3f33.jpg) center no-repeat;height:700px;}
+#box{width:1100px;height:450px;overflow:hidden;position:relative;margin:50px auto;}
+li{list-style:none;}
+ol img{width:100px;}
+#box .l ul{position:absolute;left:0;top:0;}
+ol li{cursor:pointer;border:2px solid #ccc;margin:0 0 4px;width:100px;height:56px;}
+#box div{float:left;margin:10px;overflow:hidden;position:relative;}
+.l,.l img{width:900px;height:450px;}
+.on{border:2px solid #0F0;}
+.back{width:120px;height:60px;display:inline-block;line-height:60px;text-align:center;text-decoration:none;font-size:26px;margin:20px; color:#fff;}
+p{width:100px;height:56px;position:absolute;top:0;left:0;cursor:pointer;}
+</style>
+<script src="js/move1.js" ></script>
+<script>
+window.onload=function(){
+	var oBox=document.getElementById('box');	
+	var oDiv1=oBox.children[0];
+	var oUl=oDiv1.children[0];
+	var oDiv2=oBox.children[1]
+	var oOl=oDiv2.children[1];
+	var aLi=oUl.children;
+	var aBtn=oOl.children;
+	var oP=oDiv2.children[0];
+	for(var i=0;i<aBtn.length;i++){
+		(function(index){
+				aBtn[i].onmouseover=function(){
+					var scaleY=(aBtn[0].offsetHeight+4)*index/((aBtn[0].offsetHeight+4)*(aBtn.length-1));
+						startMove(oP,{top:(aBtn[0].offsetHeight+4)*index},{time:600});
+						startMove(oUl,{top:scaleY*(oDiv1.offsetHeight-oUl.offsetHeight)},{time:600});
+				};	
+			
+		})(i);	
+	}
+};	
+
+
+</script>
+</head>
+
+<body>
+<a href="index.html" class="back">返回首页</a>
+<div id="box">
+		<div class="l"><ul>
+        	<li><img src="img/k0.jpg" alt=""/></li>
+        	<li><img src="img/k1.jpg" alt=""/></li>
+            <li><img src="img/k2.jpg" alt=""/></li>
+            <li><img src="img/k3.jpg" alt=""/></li>
+        </ul></div>
+        <div class="r">
+        	<p class="on"></p>
+            <ol>
+                <li ><img src="img/02.jpg" alt=""/></li>
+                <li><img src="img/03.jpg" alt=""/></li>
+                <li><img src="img/04.jpg" alt=""/></li>
+                <li><img src="img/05.jpg" alt=""/></li>
+            </ol>
+        </div>
+</div>
+</body>
+</html>

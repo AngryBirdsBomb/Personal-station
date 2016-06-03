@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+body{height:900px;background:url(img/927_xu02e2.jpg) center no-repeat;background-size:100% 100%;}
+div{width:350px;height:350px;border:1px solid #000;border-radius:50%;position:absolute;left:130px;=;top:180px;background:url(img/f8241c3b5bb5c9eacc51a264d539b60038f3b3d3.jpg) center no-repeat;}
+span{position:absolute;left:50%;margin-left:-25px;width:50px;height:50px;border-radius:50%;top:0;margin-top:-25px;}
+img{width:100%;height:100%;}
+.back{width:120px;height:60px;display:inline-block;line-height:60px;text-align:center;text-decoration:none;font-size:26px;margin:20px;color:#fff;}
+</style>
+<script>
+window.onload=function(){
+	var oDiv=document.body.children[1];
+	var N=10;
+	var a=0;
+	var R=oDiv.offsetWidth/2;
+	function d2a(d){
+		return d*Math.PI/180;	
+	}
+	function a2d(a){
+		return a*180/Math.PI;	
+	}
+	function rnd(n,m){
+		return parseInt(n+Math.random()*(m-n));	
+	}
+	for(var i=0;i<N;i++){
+		var oS=document.createElement('span');
+		oS.innerHTML='<a href="javascript:;"><img src="img/c'+rnd(1,8)+'.png" alt="" /></a>';
+		oDiv.appendChild(oS);
+			
+	}
+	var aS=document.getElementsByTagName('span');
+	var bOk=true;
+	oDiv.onclick=function(){
+		if(bOk)	{
+			for(var i=0;i<aS.length;i++){
+				startMove(aS[i],360/N*i,R)	
+			}
+		}
+		else{
+			for(var i=0;i<aS.length;i++){
+				startMove(aS[i],0,R)	
+			}
+		}
+		bOk=!bOk;
+		
+	};
+	function startMove(obj,iTarget,R){
+		var n=0;
+		var count=Math.floor(2000/30);
+		var start=obj.a||0;
+		var dis=iTarget-start;
+		clearInterval(obj.timer); 
+		obj.timer=setInterval(function(){
+				n++;
+				var c=1-n/count;
+				var cur=start+dis*(1-Math.pow(c,3));
+				obj.a=cur;
+				var x=R+Math.sin(d2a(cur))*R;
+				var y=R-Math.cos(d2a(cur))*R;
+				obj.style.left=x+'px';
+				obj.style.top=y+'px';
+				if(n==count){
+					clearInterval(obj.timer);	
+				}
+		},30);
+		
+		
+	};
+	
+	
+};
+
+
+
+</script>
+</head>
+
+<body>
+<a href="index.html" class="back">返回首页</a>
+<div>
+	<span></span>
+</div>
+</body>
+</html>

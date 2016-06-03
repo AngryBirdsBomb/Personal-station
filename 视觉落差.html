@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>3D舞台展示</title>
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<script>
+window.onload=function(){
+	var l=0;
+	var t=0
+		document.onmousedown=function(ev){
+				var oEvent=ev||event;
+				var oldX=oEvent.clientX-l;
+				var oldY=oEvent.clientY-t;
+				var oUl=document.getElementById('ul_container');
+				var aLi=oUl.children;
+				document.onmousemove=function(ev){
+						var oEvent=ev||event;
+						l=oEvent.clientX-oldX;
+						t=oEvent.clientY-oldY;
+						for(var i=0;i<aLi.length;i++){
+							aLi[i].style.marginLeft=l*aLi[i].style.zIndex/60+'px'	;
+							
+							aLi[i].style.marginTop=t*aLi[i].style.zIndex/60+'px';	
+							
+						}
+					
+				};
+				document.onmouseup=function(){
+					document.onmousemove=null;
+					document.onmouseup=null;
+					document.releaseCapture&&document.releaseCapture();
+					
+				};
+			document.setCapture&&document.setCapture();
+			return false;
+			
+			
+		};	
+	
+	
+};
+</script>
+</head>
+
+<body>
+
+<ul id="ul_container">
+	<li id="pic1" style="z-index: 3;"><img src="img/zindex/1.jpg" alt="www.zhinengshe.com" /></li>
+	<li id="pic2" style="z-index: 4;"><img src="img/zindex/2.jpg" alt="www.zhinengshe.com" /></li>
+	<li id="pic3" style="z-index: 5;"><img src="img/zindex/3.jpg" alt="www.zhinengshe.com" /></li>
+	<li id="pic4" style="z-index: 4;"><img src="img/zindex/4.jpg" alt="www.zhinengshe.com" /></li>
+	<li id="pic6" style="z-index: 3;"><img src="img/zindex/5.jpg" alt="www.zhinengshe.com" /></li>
+	<li id="pic7" style="z-index: 2;"><img src="img/zindex/6.jpg" alt="www.zhinengshe.com" /></li>
+	<li id="pic8" style="z-index: 5;"><img src="img/zindex/7.jpg" alt="www.zhinengshe.com" /></li>
+	<li id="pic5" style="z-index: 1;"></li>
+</ul>
+
+
+
+</body>
+</html>

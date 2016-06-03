@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0; list-style:none;}
+body{background: url(img/j1.jpg)  center no-repeat;height:900px;background-size:100% 100%;}
+ul{width:1274px; overflow:hidden;  margin:200px auto;}
+li{width:137px; height:156px;float:left; margin:5px; overflow:hidden; position:relative; top:0; left:0; font-size:30px; line-height:35px;color:#fff;}
+.dian{background:url(img/dian.png) center no-repeat;}
+img{position:absolute; top:0; left:0;}
+.back{width:120px;height:60px;display:block;line-height:60px;text-align:center;text-decoration:none;font-size:26px;margin:20px;}
+</style>
+<script src="js/move1.js"></script>
+<script>
+window.onload=function(){
+	function toDou(iNum){
+		return iNum<10?'0'+iNum:''+iNum;	
+	};	
+	var aImg=document.getElementsByTagName('img');
+	function tick(){
+		var oDate=new Date();
+		var h=oDate.getHours();
+		var m=oDate.getMinutes();
+		var s=oDate.getSeconds();
+		var str=toDou(h)+toDou(m)+toDou(s);
+		for(var i=0;i<aImg.length;i++){
+			startMove(aImg[i],{top:-156*str.charAt(i)},{time:300});	
+		}
+	}
+	tick();
+	setInterval(tick,1000);
+};
+</script>
+</head>
+
+<body>
+<a href="index.html" class="back">返回首页</a>
+<ul>
+	<li><img src="img/sz1.png" alt ="" /></li>
+    <li><img src="img/sz1.png" alt ="" /></li>
+    <li class="dian"></li>
+    <li><img src="img/sz1.png" alt ="" /></li>
+    <li><img src="img/sz1.png" alt ="" /></li>
+    <li class="dian"></li>
+    <li><img src="img/sz1.png" alt ="" /></li>
+    <li><img src="img/sz1.png" alt ="" /></li>
+
+</ul>
+</body>
+</html>

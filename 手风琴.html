@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body{background:url(img/20130924140312965.jpg) center no-repeat;}
+div{width:900px;height:450px;margin:50px  auto;overflow:hidden;}
+ul{position:relative;height:228px;}
+li{list-style:none;width:900px;height:450px;position:absolute;left:0;top:0;}
+*{ margin:0; padding:0; list-style:none;}
+.back{width:120px;height:60px;display:inline-block;line-height:60px;text-align:center;text-decoration:none;font-size:26px;margin:20px; color:#fff;}
+img{width:900px;height:450px;}
+</style>
+<script src="js/move1.js" ></script>
+<script>
+window.onload=function(){
+	var oUl=document.getElementsByTagName('ul')[0];	
+	var aLi=oUl.children;
+	var oneW=oUl.offsetWidth;
+	var defaultW=40;
+	for(var i=1;i<aLi.length;i++){
+		aLi[i].style.left=oneW-(aLi.length-i)*defaultW+'px';	
+		
+	}
+	for(var i=0;i<aLi.length;i++){
+		(function(index){
+			aLi[i].onmouseover=function(){
+					for(var i=0;i<aLi.length;i++){
+						if(i<=index){
+								startMove(aLi[i],{left:i*defaultW},{time:1000});	
+						}	
+						else{
+								startMove(aLi[i],{left:oneW-(aLi.length-i)*defaultW},{time:1000});	
+								
+						}
+					
+					}	
+				
+			};	
+			
+			
+		})(i);	
+	}
+	
+};
+
+
+</script>
+</head>
+
+<body>
+<a href="index.html" class="back">返回首页</a>
+<div>
+    <ul>
+        <li><img src="img/k0.jpg" alt="" /></li>
+        <li><img src="img/k1.jpg" alt="" /></li>
+        <li><img src="img/k2.jpg" alt="" /></li>
+        <li><img src="img/k3.jpg" alt="" /></li>
+        <li><img src="img/k4.jpg" alt="" /></li>
+    </ul>
+</div>
+</body>
+</html>

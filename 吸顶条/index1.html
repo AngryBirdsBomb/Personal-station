@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style1.css" />
+<script>
+window.onload=function(){
+	var oDiv1=document.getElementById('box1');
+	var oDiv2=document.getElementById('box2');
+	window.onscroll=function(){
+		var divT=oDiv1.offsetTop||oDiv2.offsetTop;
+		var scrollT=document.documentElement.scrollTop||document.body.scrollTop;
+		if(divT<scrollT){
+			oDiv1.style.position='fixed';
+			oDiv1.style.left=430+'px';
+			oDiv1.style.top=0;
+			oDiv2.style.display='block';	
+		}
+		else{
+			oDiv1.style.position='';
+			oDiv2.style.display='none';	
+		}
+	
+	};
+	
+		
+};
+
+</script>
+</head>
+
+<body>
+<a href="../index.html" class="back">返回首页</a>
+<div class="searchbox" id="box1">
+	<input type="text" class="searchtext"/>
+    <input type="button" value="搜索"  class="searchbtn"/>
+
+</div>
+<div class="searchbox" id="box2">
+</div>
+<div>
+    <!--电影-->
+    <div class="moviebox clearfix">
+        <div class="movie_l fl">
+            <h3 class="clearfix"><a href="#" class="h3fontsize fl">电影</a>
+            <i><a href="#" class="more fl">更多&gt;</a></i>
+            <ul class="movielist fl clearfix">
+                <li><a href="#">爱奇艺爱电影</a></li>
+                <li><a href="#">爱奇艺爱电影</a></li>
+                <li><a href="#">爱奇艺爱电影</a></li>
+                <li><a href="#">爱奇艺爱电影</a></li>
+                <li><a href="#">爱奇艺爱电影</a></li>
+            </ul>
+            </h3>
+            <div class="movie_l_list">
+              <ul class="clearfix">
+                  <li>
+                      <a href="#"><img src="img/movie_l_img.jpg" alt="" /></a>
+                      <p><a href="#">韩公主</a></p>
+                  
+                  </li>
+                  <li>
+                      <a href="#"><img src="img/movie_l_img.jpg" alt="" /></a>
+                      <div class="imgintro">
+                            <div class="shade"></div>
+                            <P>1080P</P>
+                      
+                      </div>
+                      <p><a href="#">韩公主</a></p>
+                  </li>
+                  <li>
+                      <a href="#" class="dingwei1"><img src="img/movie_l_img.jpg" alt="" /><i></i></a>
+                      <div class="imgintro">
+                            <div class="shade"></div>
+                            <P>1080P</P>
+                      
+                      </div>
+                      <p><a href="#">韩公主</a></p>
+                  </li>
+                  <li>
+                      <a href="#"><img src="img/movie_l_img.jpg" alt="" /></a>
+                      <div class="imgintro">
+                            <div class="shade"></div>
+                            <P>1080P</P>
+                      
+                      </div>
+                      <p><a href="#">韩公主</a></p>
+                  </li>
+                  <li>
+                      <a href="#" class="dingwei1"><img src="img/movie_l_img.jpg" alt="" /><i></i></a>
+                      <div class="imgintro">
+                            <div class="shade"></div>
+                            <P>1080P</P>
+                      
+                      </div>
+                      <p><a href="#">韩公主</a></p>
+                  </li>
+                  <li>
+                      <a href="#" class="dingwei1"><img src="img/movie_l_img.jpg" alt="" /><i class="zizhi"></i></a>
+                      <div class="imgintro">
+                            <div class="shade"></div>
+                            <P>1080P</P>
+                      
+                      </div>
+                      <p><a href="#">韩公主</a></p>
+                  </li>
+                  <li>
+                      <a href="#" class="dingwei1"><img src="img/movie_l_img.jpg" alt="" /><i class="dubo"></i><span class="fufei">付费点播</span></a>
+                      <div class="imgintro">
+                            <div class="shade"></div>
+                            <P>1080P</P>
+                      
+                      </div>
+                      <p><a href="#">韩公主</a></p>
+                  </li>
+                  <li>
+                      <a href="#" class="dingwei1"><img src="img/movie_l_img.jpg" alt="" /><i></i><b class="vip">VIP</b></a>
+                      <div class="imgintro">
+                            <div class="shade"></div>
+                            <P>1080P</P>
+                      
+                      </div>
+                      <p><a href="#">韩公主</a></p>
+                  </li>
+              </ul>
+            </div>
+            
+            
+            
+        </div>
+         <div class="movie_r fl">
+            <h3 class="clearfix"><a href="#" class="h3fontsize fl">电影榜</a>
+            <i><a href="#" class="more fl">更多&gt;</a></i>
+            </h3>
+            <ul>
+                <li><span class="movie_r_collv">1</span><a href="#">痞子英雄2：黎明生起</a></li>
+                <li><span class="movie_r_collv">2</span><a href="#">痞子英雄2：黎明生起</a></li>
+                <li><span class="movie_r_collv">3</span><a href="#">痞子英雄2：黎明生起</a></li>
+                <li class="movieicon5"><span>4</span><a href="#">痞子英雄2：黎明生起</a></li>
+                <li><span>5</span><a href="#">痞子英雄2：黎明生起</a></li>
+                <li class="movieicon5"><span>6</span><a href="#">痞子英雄2：黎明生起</a></li>
+                <li><span>7</span><a href="#">痞子英雄2：黎明生起</a></li>
+                <li><span>8</span><a href="#">痞子英雄2：黎明生起</a></li>
+            
+            </ul>
+            <div class="movie_smlist">
+                <a href="#" class="dingwei1"><img src="img/movie_l_img.jpg" alt=""><i></i><b class="vip">VIP</b></a>
+                <div class="imgintro">
+                      <div class="shade"></div>
+                      <p>1080P</p>
+                
+                </div>
+                <p><a href="#">韩公主</a></p>
+            </div>
+         
+         </div>
+    </div>
+    <!--微电影-->
+    <div class="weidianying clearfix">
+      <div class="movie_l smmovie fl">
+        <h3 class="clearfix"><a href="#" class="h3fontsize fl">微电影</a>
+        <i><a href="#" class="more fl">更多&gt;</a></i>
+        <ul class="movielist fl clearfix">
+            <li><a href="#">《星际穿越》类型短片</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+        </ul>
+        </h3>
+        <ul class="smmovielist">
+            <li>
+                <a href="#"><img src="img/smmovieimg.jpg" alt="" /><i class="smmovieicon"></i></a>
+                <p><a href="#">青春相贱不恨晚</a></p>
+            
+            
+            
+            </li>
+            <li>
+                <a href="#"><img src="img/smmovieimg.jpg" alt="" /><i class="smmovieicon"></i></a>
+                <p><a href="#">青春相贱不恨晚</a></p>
+            
+            
+            
+            </li>
+            <li>
+                <a href="#"><img src="img/smmovieimg.jpg" alt="" /><i class="smmovieicon"></i></a>
+                <p><a href="#">青春相贱不恨晚</a></p>
+            
+            
+            
+            </li>
+        </ul>
+      </div>
+      <div class="movie_l pianhua fl">
+          <h3 class="clearfix"><a href="#" class="h3fontsize fl">片花</a>
+        <i><a href="#" class="more fl">更多&gt;</a></i>
+        <ul class="movielist fl clearfix">
+            <li><a href="#">《一步之遥》活动</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+        </ul>
+        </h3>
+          <ul class="smmovielist clearfix">
+            <li>
+                <a href="#"><img src="img/smmovieimg.jpg" alt="" /><i class="smmovieicon"></i></a>
+                <p><a href="#">青春相贱不恨晚</a></p>
+            </li>
+            <li>
+                <a href="#"><img src="img/smmovieimg.jpg" alt="" /><i class="smmovieicon"></i></a>
+                <p><a href="#">青春相贱不恨晚</a></p>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <!--电视剧-->
+    <div class="moviebox clearfix">
+    <div class="movie_l fl">
+        <h3 class="clearfix"><a href="#" class="h3fontsize fl">电视剧</a>
+        <i><a href="#" class="more fl">更多&gt;</a></i>
+        <ul class="movielist fl clearfix">
+            <li><a href="#">爱奇艺爱电影</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+            <li><a href="#">爱奇艺爱电影</a></li>
+        </ul>
+        </h3>
+        <div class="movie_l_list">
+          <ul class="clearfix">
+              <li>
+                  <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                  <div class="imgintro vediointro">
+                  		<div class="shade"></div>
+                        <p>团圆饭</p>
+                        <p>更新至29集/共45集</p>
+                  
+                  </div>
+                  <p><a href="#">韩公主</a></p>
+              </li>
+              <li>
+                  <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                  <div class="imgintro vediointro">
+                  		<div class="shade"></div>
+                        <p>团圆饭</p>
+                        <p>更新至29集/共45集</p>
+                  
+                  </div>
+                  <p><a href="#">韩公主</a></p>
+              </li>
+              <li>
+                  <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                  <div class="imgintro vediointro">
+                  		<div class="shade"></div>
+                        <p>团圆饭</p>
+                        <p>更新至29集/共45集</p>
+                  
+                  </div>
+                  <p><a href="#">韩公主</a></p>
+              </li>
+              <li>
+                  <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                  <div class="imgintro vediointro">
+                  		<div class="shade"></div>
+                        <p>团圆饭</p>
+                        <p>更新至29集/共45集</p>
+                  
+                  </div>
+                  <p><a href="#">韩公主</a></p>
+              </li>
+              <li>
+                  <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                  <div class="imgintro vediointro">
+                  		<div class="shade"></div>
+                        <p>团圆饭</p>
+                        <p>更新至29集/共45集</p>
+                  
+                  </div>
+                  <p><a href="#">韩公主</a></p>
+              </li>
+              <li>
+                  <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                  <div class="imgintro vediointro">
+                  		<div class="shade"></div>
+                        <p>团圆饭</p>
+                        <p>更新至29集/共45集</p>
+                  
+                  </div>
+                  <p><a href="#">韩公主</a></p>
+              </li>
+              <li>
+                  <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                  <div class="imgintro vediointro">
+                  		<div class="shade"></div>
+                        <p>团圆饭</p>
+                        <p>更新至29集/共45集</p>
+                  
+                  </div>
+                  <p><a href="#">韩公主</a></p>
+              </li>
+              <li>
+                  <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                  <div class="imgintro vediointro">
+                  		<div class="shade"></div>
+                        <p>团圆饭</p>
+                        <p>更新至29集/共45集</p>
+                  
+                  </div>
+                  <p><a href="#">韩公主</a></p>
+              </li>
+            </ul>
+          </div>
+          
+          
+          
+      </div>
+       <div class="movie_r fl">
+          <h3 class="clearfix"><a href="#" class="h3fontsize fl">电影榜</a>
+          <i><a href="#" class="more fl">更多&gt;</a></i>
+          </h3>
+          <ul>
+              <li><span class="movie_r_collv">1</span><a href="#">痞子英雄2：黎明生起</a></li>
+              <li><span class="movie_r_collv">2</span><a href="#">痞子英雄2：黎明生起</a></li>
+              <li><span class="movie_r_collv">3</span><a href="#">痞子英雄2：黎明生起</a></li>
+              <li class="movieicon5"><span>4</span><a href="#">痞子英雄2：黎明生起</a></li>
+              <li><span>5</span><a href="#">痞子英雄2：黎明生起</a></li>
+              <li class="movieicon5"><span>6</span><a href="#">痞子英雄2：黎明生起</a></li>
+              <li><span>7</span><a href="#">痞子英雄2：黎明生起</a></li>
+              <li><span>8</span><a href="#">痞子英雄2：黎明生起</a></li>
+          
+          </ul>
+          <div class="movie_smlist">
+                    <a href="#"><img src="img/movie_l_img.jpg" alt=""></a>
+                    <div class="imgintro vediointro">
+                          <div class="shade"></div>
+                          <p>团圆饭</p>
+                          <p>更新至29集/共45集</p>
+                    
+                    </div>
+                    <p><a href="#">韩公主</a></p>
+          </div>
+       
+       </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0; list-style:none;}
+#box{width:800px;height:450px; position:relative; top:0; left:0; margin:100px auto; overflow:hidden;}
+#box ul{position:absolute; top:0; left:0;}
+#box ul li{float:left; width:800px; height:450px;}
+#box ul li img{width:100%;height:450px;}
+#box ol{width:160px;position:absolute; left:50%; bottom:20px; margin-left:-80px;}
+#box ol li{width:10px; height:10px; background:rgba(200,200,200,1); border-radius:50%; float:left; text-indent:-99999px; margin:10px;}
+#box ol li.on{background:rgba(51,255,0,0.6);}
+#box a{position:absolute; top:50%; margin-top:-20px; width:60px; height:40px; background:rgba(0,0,0,0.5); font-size:20px; text-align:center; line-height:40px; color:#fff; text-decoration:none; display:none;}
+#box .prev{left:0; display:none;}
+#box .next{right:0;display:none;}
+#box a:hover{background:rgba(0,255,0,0.6);}
+.back{width:120px;height:60px;display:block;line-height:60px;text-align:center;text-decoration:none;font-size:26px;margin:20px;}
+</style>
+<script>
+window.onload=function(){
+	
+	var oUl=document.getElementsByTagName('ul')[0];
+	var aLi=oUl.getElementsByTagName('li');	
+	var oOl=document.getElementsByTagName('ol')[0];
+	var aBtn=oOl.children;
+	var oPrev=document.getElementsByTagName('a')[1];
+	var oNext=document.getElementsByTagName('a')[2];
+	var iNow=0;
+	var oBox=document.body.children[1];
+	oUl.innerHTML+=oUl.innerHTML;
+	oUl.style.width=aLi.length*aLi[0].offsetWidth+'px';
+	var timer=null;
+	var w=oUl.offsetWidth/2;
+	for(var i=0;i<aBtn.length;i++){
+			(function(index){
+				aBtn[i].onmouseover=function(){
+					if((iNow%aBtn.length==4||iNow%aBtn.length==-1)&&index%aBtn.length==0){
+					iNow++;
+				}
+				if(iNow%aBtn.length==0&&index%aBtn.length==4){
+					iNow--;
+				}
+					
+					iNow=Math.floor(iNow/aBtn.length)*aBtn.length+index;
+					tab();	
+				};
+				
+			})(i);	
+		
+	}
+	oPrev.onclick=function(){
+		iNow--;
+		tab();	
+	};
+	oNext.onclick=function(){
+		iNow++;
+		tab();	
+		
+	};
+	function tab(){
+		for(var i=0;i<aBtn.length;i++){
+			aBtn[i].className='';
+		}	
+		if(iNow>0){
+			aBtn[iNow%aBtn.length].className='on';
+		}
+		else{
+			aBtn[(iNow%aBtn.length+aBtn.length)%aBtn.length].className='on';
+		}
+		startMove(oUl,-iNow*aLi[0].offsetWidth);
+	};
+	var left=0;
+	function startMove(obj,iTarget){
+		var start=left;
+		var n=0;
+		var count=Math.floor(700/30);
+		var dis=iTarget-start;
+		clearInterval(timer);
+		timer=setInterval(function(){
+				n++;
+				var a=1-n/count;
+				 left=start+dis*(1-Math.pow(a,3));
+				if(left<0){
+					obj.style.left=left%w+'px';	
+				}
+				else{
+					obj.style.left=(left%w-w)%w+'px';	
+				}
+				if(n==count){
+					clearInterval(timer);	
+				}
+		},30);
+		
+		
+	}
+	
+	oBox.onmouseover=function(){
+		oPrev.style.display='block';
+		oNext.style.display='block';
+	};
+	oBox.onmouseout=function(){
+		oPrev.style.display='none';
+		oNext.style.display='none';
+	};
+	
+	
+};
+
+
+
+
+</script>
+</head>
+
+<body>
+<a href="index.html" class="back">返回首页</a>
+<div id="box">
+	<ul>
+    	<li><img src="img/500cc9c807dce.jpg" /></li>
+    	<li><img src="img/2496598_102951027337_2.jpg" /></li>
+    	<li><img src="img/20120119172026_tT8nW.jpg" /></li>
+    	<li><img src="img/04.jpg" /></li>
+    	<li><img src="img/05.jpg" /></li>
+    </ul>
+    <ol>
+    	<li class="on">0</li>
+    	<li>1</li>
+    	<li>2</li>
+    	<li>3</li>
+    	<li>4</li>
+    </ol>
+	<a href="javascript:;" class="prev">prev</a>
+    <a href="javascript:;" class="next">next</a>
+</div>
+</body>
+</html>
