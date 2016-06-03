@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0;}
+#box{width:700px; height:400px; background:url(img/j0.jpg) no-repeat; margin:100px auto; position:relative; top:0; left:0;background-size:100% 100%;}
+#box span{background:url(img/j0.jpg) no-repeat; opacity:0;background-size:700px 400px;}
+.back{width:120px;height:60px;display:inline-block;line-height:60px;text-align:center;text-decoration:none;font-size:26px;margin:20px;}
+input{width:80px;height:40px;margin:20px;}
+</style>
+<script src="js/move1.js"></script>
+<script>
+window.onload=function(){
+	var R	=4
+	var C=8;
+	var oBtn=document.body.children[1];
+	var oBox=document.getElementById('box');
+	for(var i=0;i<R;i++){
+		for(var j=0;j<C;j++){
+			var oS=document.createElement('span');	
+			oS.style.width=oBox.offsetWidth/C+'px';
+			oS.style.height=oBox.offsetHeight/R+'px';
+			oBox.appendChild(oS);
+			oS.style.left=j*oBox.offsetWidth/C+'px';
+			oS.style.top=i*oBox.offsetHeight/R+'px';
+			oS.style.position='absolute';
+			oS.style.backgroundPosition=-j*oBox.offsetWidth/C+'px  -'+i*oBox.offsetHeight/R+'px';
+			oS.r=i;
+			oS.c=j;
+		}	
+		
+	}
+	var bOk=false;
+	var iNow=0;
+	var timer=null;
+	oBtn.onclick=function(){
+		if(bOk)return;
+		bOk=true;
+		var aS=oBox.children;
+		iNow++;
+		for(var i=0;i<aS.length;i++){
+				(function(index){
+					setTimeout(function(){
+						aS[index].style.backgroundImage='url(img/j'+iNow%3+'.jpg)';
+						aS[index].style.opacity=0;
+						aS[index].style.filter='alpha(opacity:0)';
+						(function(j){
+							startMove(aS[j],{opacity:1},{time:2000,end:function(){
+								if(j==aS.length-1){
+									oBox.style.bakcgroundImage='url(img/j'+iNow%3+'.jpg)';	
+									bOk=false;
+								}	
+							}})	
+						})(index);
+					},100*(aS[index].c+aS[index].r) )//300*index   300*(aS[index].c+aS[index].r)  300*Math.random()
+				})(i);
+		}
+	};
+};
+
+
+
+
+</script>
+</head>
+
+<body>
+<a href="index.html" class="back">返回首页</a>
+<input type="button" value="切换" />
+<div id="box"></div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+/*头部*/
+html,body{width:100%;}
+header{width:5.4rem;margin:0 auto;padding:.2rem .2rem .2rem .2rem;background:#343434;text-align:center;color:#fff;font-size:0.3rem;line-height:.5rem;}
+header a{width:0.5rem;height:0.5rem;	
+border-radius:.1rem;}
+.home{background:url(../img/icons/phone1.jpg) center no-repeat;}
+.options{background: url(../img/icons/phone2.jpg) center no-repeat;}
+/*头部广告*/
+.banner{position:relative;padding-top:.02rem;overflow:hidden;height:3.6rem;width:5.9rem;font-size:0.14rem;}
+.banner>a{position:absolute;width:.5rem;height:.5rem;top:.02rem;}
+.prev{left:.4rem;background:url(../img/icons/prev.png) center no-repeat;}
+.next{right:.4rem; background:url(../img/icons/next.png) center no-repeat;}
+.banner ul ,.banner ol {text-align:center;margin-bottom:.04rem;}
+.banner ol{width:5.9rem;}
+.banner ul{width:23.6rem;position:absolute;left:0;top:0.6rem;}
+.banner li{float:left;display:inline;}
+.banner ol li{margin-left:1.5rem;width:2.64rem;height:.36rem;background:#666;padding:.08rem .14rem;border-radius:0.1rem;line-height:.26rem;display:none;}
+.banner ol a{color:#fff;}
+.banner ol li.on{display:block;}
+.banner ul li{width:5.9rem;height:2.96rem;}
+.banner ul img{width:5.9rem;height:2.96rem;}
+/*内容*/
+.content{width:5.9rem;}
+.content h4{color:#f5d8c8;font-size:.2rem;height:.6rem; line-height:.6rem;border-bottom:1px solid #eeeeee;padding-left:.12rem;}
+.content h4 a{color:#8dd581;font-size:.24rem;margin-right:20px;}
+
+/*导航菜单*/
+.navlist{width:5.9rem;overflow:hidden;}
+.navlist ol{width:10rem;}
+.navlist ol li{width:1.38rem;height:1.38rem;border:1px solid #eee;margin-right:.12rem;float:left;text-align:center;}
+.navlist ol li a{display:inline-block;width:.56rem;height:.56rem;}
+.navlist .pic1{background:url(../img/icons/smicon1.png) center no-repeat;background-size:100% 100%;}
+.navlist .pic2{background:url(../img/icons/smicon3.png) center no-repeat;background-size:100% 100%;}
+.navlist .pic3{background:url(../img/icons/smicon4.png) center no-repeat;background-size:100% 100%;}
+.navlist .pic4{background:url(../img/icons/smicon5.png) center no-repeat;background-size:100% 100%;}
+
+
+.navlist ol li.sel{border-bottom:0.01rem solid #eee;}
+.navlist ol li p{margin-top:.1rem;font-size:.18rem;}
+.navlist ul{width:5.6rem;float:left;display:none;text-indent:2em;font-size:.14rem;padding:0 .26rem 0 .18rem;border:.01rem solid #eee; border-top:none;}
+.navlist ul.show{display:block;}
+.navlist ul p{line-height:.3rem;}
+
+/*帮助列表*/
+.link{width:5.9rem;border:.01rem solid #eee;overflow:hidden;}
+.linkbox{width:6rem;margin-top:.12rem;}
+.linkbox li{float:left;display:inline;width:1.84rem;height:1.24rem;text-align:center;border-radius:.1rem;margin:0 .1rem .1rem 0;color:#fff;font-size:.2rem;}
+.linkbox li a{display:block;width:.82rem;height:.82rem;margin:.1rem auto 0.06rem;border-radius:.1rem;background-size:100% 100%;}
+.linkbtn1{background:#92cf68;}
+.linkbox .linkbtn1 a{background: url(../img/icons/linkbtn1.png) center no-repeat;}
+.linkbtn2{background:#58b5e1;}
+.linkbox .linkbtn2 a{background: url(../img/icons/linkbtn2.png) center no-repeat;}
+.linkbtn3{background:#fcc954;}
+.linkbox .linkbtn3 a{background: url(../img/icons/linkbtn3.png) center no-repeat;}
+.linkbtn4{background:#fa6567;}
+.linkbox .linkbtn4 a{background: url(../img/icons/linkbtn4.png) center no-repeat;}
+.linkbtn5{background:#f7774a;}
+.linkbox .linkbtn5 a{background: url(../img/icons/linkbtn5.png) center no-repeat;}
+.linkbtn6{background:#dc78c0;}
+.linkbox .linkbtn6 a{background: url(../img/icons/linkbtn6.png) center no-repeat;}
+
+/*尾部*/
+footer{width:5.9rem;margin:0 auto;border:.01rem solid #eee;}
+footer li{float:left;margin:.2rem .4rem;}
+footer li a{width:.54rem;height:.54rem;display:block;}
+.help1{background:url(../img/icons/help1.png) center no-repeat;background-size:100% 100%;}
+.help2{background:url(../img/icons/help2.png) center no-repeat;background-size:100% 100%;}
+.help3{background:url(../img/icons/help3.png) center no-repeat;background-size:100% 100%;width:.4rem;}
+.help4{background:url(../img/icons/help4.png) center no-repeat;background-size:100% 100%;}
+@media screen and (max-width: 360px){
+/*手机端*/	
+header{background:#FF0; color:#60C;}
+body{color:#006;}
+}
+@media screen and (max-width: 767px) and (min-width:361px){
+/*手机端*/	
+header{background:#C00;}
+body{color:#F00;}
+}
+@media screen and (min-width: 768px) and(max-width: 991px){
+/*平板*/		
+header{background:#FF9;}
+body{color:#6F0;}
+}
+
+
+@media screen and(min-width: 992px ) and (max-width:1199px){
+/*中等屏幕*/		
+header{background:#60F;}
+body{color:#60C;}
+}
+@media screen and(min-width:1200px){
+/*大型屏幕*/	
+header{background:#0F0;}
+body{color:#9FF;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

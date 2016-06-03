@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://bns.qq.com/main.shtml -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<script>var d0 = new Date();</script>
+<meta charset="gb2312">
+<meta name="author" content="Tencent-TGideas">
+<meta name="robots" content="all">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="《剑灵》官方网站。剑灵凭借完美的视觉表现力，电影版的剧情体验，深厚的东方文化底蕴，自由灵活的战斗体验，成为突破传统、引领潮流的最受期待网游。">
+<meta name="Keywords" content="剑灵,剑灵官网,ncsoft,剑灵激活码,剑灵公测时间,剑灵测试,BNS,剑灵OL,剑灵职业,剑灵种族,剑灵视频,剑灵图片,剑灵新闻,刀魂,blade&amp;soul,bladeandsoul,blade_soul,剑灵客户端下载,韩游,最期待网游,剑灵下载,qq剑灵,jianling">
+<title>官网首页-剑灵官方网站-腾讯游戏</title>
+<!--页面设计：ejin | 页面制作:troykang | 创建:2015-06-15 | 团队博客：http://tgideas.qq.com/-->
+<link rel="stylesheet" href="http://bns.qq.com/web201506/css/main.css">
+<style type="text/css" adt="123"></style><script>if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+(function() {
+    Function.prototype.bind = function() {
+        var fn = this, args = Array.prototype.slice.call(arguments), obj = args.shift();
+        return function() {
+            return fn.apply(obj, args.concat(Array.prototype.slice.call(arguments)));
+        };
+    };
+    function A() {}
+    A.prototype = {
+        rules: {
+            /*'youku_loader': {
+                'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                'replace': 'http://swf.adtchrome.com/loader.swf'
+            },
+            'youku_out': {
+                'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+            },*/
+            'pps_pps': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+            },
+            /*'iqiyi_1': {
+                'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },
+            'iqiyi_2': {
+                'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+            },*/
+            'ku6': {
+                'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+            },
+            'ku6_topic': {
+                'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+            },
+            'sohu': {
+                'find': /^http:\/\/tv\.sohu\.com\/upload\/swf(\/p2p)?\/\d+\/Main\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu2':{
+                'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+            },
+            'sohu_share': {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+            },
+            'sohu_sogou' : {
+                'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+            },
+            'letv': {
+                'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            'letv_topic': {
+                'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+            },
+            /*'letv_duowan': {
+                'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                'replace': 'http://yuntv.letv.com/bcloud.swf'
+            },*/
+            '17173_in':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+            },
+            '17173_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+            },
+            '17173_live':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+            },
+            '17173_live_out':{
+                'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+            }
+        },
+        _done: null,
+        get done() {
+            if(!this._done) {
+                this._done = new Array();
+            }
+            return this._done;
+        },
+        addAnimations: function() {
+            var style = document.createElement('style');
+            style.type = 'text/css';
+            style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+            document.getElementsByTagName('head')[0].appendChild(style);
+        },
+        animationsHandler: function(e) {
+            if(e.animationName === 'playerInserted') {
+                this.replace(e.target);
+            }
+        },
+        replace: function(elem) {
+            if(this.done.indexOf(elem) != -1) return;
+            this.done.push(elem);
+            var player = elem.data || elem.src;
+            if(!player) return;
+            var i, find, replace = false;
+            for(i in this.rules) {
+                find = this.rules[i]['find'];
+                if(find.test(player)) {
+                    replace = this.rules[i]['replace'];
+                    if('function' === typeof this.rules[i]['preHandle']) {
+                        this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                    }else{
+                        this.reallyReplace.bind(this, elem, find, replace)();
+                    }
+                    break;
+                }
+            }
+        },
+        reallyReplace: function(elem, find, replace) {
+            elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+            var b = elem.querySelector("param[name='movie']");
+            this.reloadPlugin(elem);
+        },
+        reloadPlugin: function(elem) {
+            var nextSibling = elem.nextSibling;
+            var parentNode = elem.parentNode;
+            parentNode.removeChild(elem);
+            var newElem = elem.cloneNode(true);
+            this.done.push(newElem);
+            if(nextSibling) {
+                parentNode.insertBefore(newElem, nextSibling);
+            } else {
+                parentNode.appendChild(newElem);
+            }
+        },
+        init: function() {
+            var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+            /*if(desc.indexOf('adobe')>-1){
+                delete this.rules["iqiyi_1"];
+                delete this.rules["iqiyi_2"];
+            }*/
+            if(document.URL.indexOf('tv.sohu.com')<=0){
+                delete this.rules["sohu"];
+            }
+            var handler = this.animationsHandler.bind(this);
+            document.body.addEventListener('webkitAnimationStart', handler, false);
+            document.body.addEventListener('msAnimationStart', handler, false);
+            document.body.addEventListener('oAnimationStart', handler, false);
+            document.body.addEventListener('animationstart', handler, false);
+            this.addAnimations();
+        }
+    };
+    new A().init();
+})();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+// 20150108
+setTimeout(function(){
+    if (document.URL.indexOf('www.baidu.com') >= 0) {
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.removeAttribute("style")
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+    }
+}, 400);
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><script src="./官网首页-剑灵官方网站-腾讯游戏_files/tgadshow.min.js" type="text/javascript"></script><script src="./官网首页-剑灵官方网站-腾讯游戏_files/tgswfobj_s.js" type="text/javascript"></script><script src="./官网首页-剑灵官方网站-腾讯游戏_files/stats" type="text/javascript"></script><script src="./官网首页-剑灵官方网站-腾讯游戏_files/title.js" type="text/javascript"></script><link href="./官网首页-剑灵官方网站-腾讯游戏_files/ost.min.css" rel="stylesheet" type="text/css"><script src="./官网首页-剑灵官方网站-腾讯游戏_files/cgi_official_website.cgi" type="text/javascript" charset="gb2312"></script><script src="./官网首页-剑灵官方网站-腾讯游戏_files/data.js" type="text/javascript" charset="gb2312"></script><script src="./官网首页-剑灵官方网站-腾讯游戏_files/data.js" type="text/javascript" charset="gb2312"></script><script src="./官网首页-剑灵官方网站-腾讯游戏_files/data.js" type="text/javascript" charset="gb2312"></script><script src="./官网首页-剑灵官方网站-腾讯游戏_files/ping_tcss_ied.js" type="text/javascript"></script></head>
+<body style="padding-top: 42px;">
+<div class="wrapper clearfix pr">
+    <a class="honor-link spr pa ti" href="http://bns.qq.com/web201307/honors.shtml" target="_blank" title="点击查看剑灵所获荣誉">荣誉榜</a>
+    <div class="lside-bg">
+        <div class="lside">
+            <h1><a class="logo ti" href="http://bns.qq.com/index.shtml" onclick="pgvSendClick({hottag:&#39;main.lside.logo&#39;})">剑灵</a></h1>
+            <a class="download allTrans pr" href="http://bns.qq.com/web201506/download.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.download&#39;})"><i class="down-top spr"></i><i class="down-text-1 allTrans spr pa"></i><i class="down-text-2 allTrans spr pa"></i><i class="btn-rp pa"></i></a>
+            <a class="fast-lnk-1 allTrans pr" href="http://bns.qq.com/act/a20131205intro/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.flnk1&#39;})"><i class="flnk-icon-1 allTrans spr"></i><span class="flnk-text-1 allTrans">新手礼包</span><i class="btn-rp pa"></i></a>
+            <a class="fast-lnk flnk-2 pr allTrans" href="http://bns.qq.com/comm-htdocs/pay/new_index.htm?t=bns" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.flnk2&#39;})"><i class="flnk-icon spr ficon-1"></i><span class="flnk-text">点券充值</span></a>
+            <a class="fast-lnk flnk-3 pr allTrans" href="http://bns.qq.com/web201506/exchange.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.flnk3&#39;})"><i class="flnk-icon spr ficon-2"></i><span class="flnk-text">兑换中心</span></a>
+            <a class="fast-lnk flnk-4 pr allTrans" href="http://bns.qq.com/web201506/event.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.flnk4&#39;})"><i class="flnk-icon spr ficon-3"></i><span class="flnk-text">活动中心</span></a>
+            <ul class="lside-lnks">
+                <li>
+                    <a class="lside-lnk allTrans" href="http://daoju.qq.com/bns/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.lnks.lnk1&#39;})">
+                        <i class="lside-icon spr licon-1 allTrans"></i>
+                        <i class="llnk-name allTrans">道聚城</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="lside-lnk allTrans" href="http://bns.qq.com/act/a20140105welfare/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.lnks.lnk2&#39;})">
+                        <i class="lside-icon spr licon-2 allTrans"></i>
+                        <i class="llnk-name allTrans">福利中心</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="lside-lnk allTrans" href="http://bns.qq.com/web201506/account.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.lnks.lnk3&#39;})">
+                        <i class="lside-icon spr licon-3 allTrans"></i>
+                        <i class="llnk-name allTrans">帐号安全</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="lside-lnk allTrans" href="http://bns.qq.com/act/a20131030repair/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.lnks.lnk4&#39;})">
+                        <i class="lside-icon spr licon-4 allTrans"></i>
+                        <i class="llnk-name allTrans">报错修复</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="lside-lnk allTrans" href="http://bns.qq.com/act/a20131023computer/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.lnks.lnk5&#39;})">
+                        <i class="lside-icon spr licon-5 allTrans"></i>
+                        <i class="llnk-name allTrans">硬件百科</i>
+                    </a>
+                </li>
+                <li>
+                    <a class="lside-lnk allTrans" href="http://bns.gamebbs.qq.com/forum.php" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.lnks.lnk6&#39;})">
+                        <i class="lside-icon spr licon-6 allTrans"></i>
+                        <i class="llnk-name allTrans">洪门论坛</i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="coop-lnks">
+                <li>
+                    <a class="coop-lnk pr" href="http://youxi.vip.qq.com/game/zhuanqu/v5.html?id=Bns" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop1&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-1 pa"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="coop-lnk pr" href="http://gamevip.qq.com/fulishe/bns.html" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop2&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-2 pa"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="coop-lnk pr" href="http://vip.qzone.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop3&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-3 pa"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="coop-lnk pr" href="http://igame.qq.com/center/index.php?first=1&gid=61" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop4&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-4 pa"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="coop-lnk pr" href="http://vip.music.qq.com/index.html" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop5&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-5 pa"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="coop-lnk pr" href="http://pet.qq.com/app/vip.html" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop6&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-6 pa"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="coop-lnk pr" href="http://xinyue.qq.com/act/a20140912subscribe/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop7&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-7 pa"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="coop-lnk pr" href="http://guanjia.qq.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop8&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-8 pa"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="coop-lnk pr" href="http://bang.qq.com/gl/index/bns" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.cooplnk.coop9&#39;})">
+                        <i class="cooplnk-bg allTrans pa"></i>
+                        <i class="cooplnk-icon spr coopicon-9 pa"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="coopmedia pr" id="coopmedia">
+                <a href="javascript:;"><span class="arrow-icon allTrans spr"></span>合作媒体</a>
+                <ul class="coop-list pa" style="display: none;">
+                    <li><a href="http://games.qq.com/tencent/bns/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_qqgames&#39;});" class="coop-link">腾讯游戏频道</a></li>
+                    <li><a href="http://bns.17173.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_17173&#39;});" class="coop-link">17173.com</a></li>
+                    <li><a href="http://bns.duowan.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_duowan&#39;});" class="coop-link">多玩</a></li>
+                    <li><a href="http://games.sina.com.cn/bns/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_sinagames&#39;});" class="coop-link">新浪游戏</a></li>
+                    <li><a href="http://bns.178.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_178&#39;});" class="coop-link">178.com</a></li>
+                    <li><a href="http://bns.766.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_766&#39;});" class="coop-link">766.com</a></li>
+                    <li><a href="http://bns.131.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_131&#39;});" class="coop-link">131.com</a></li>
+                    <li><a href="http://bns.52pk.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_52pk&#39;});" class="coop-link">52PK.com</a></li>
+                    <li><a href="http://bns.pcgames.com.cn/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_tpy&#39;});" class="coop-link">太平洋游戏</a></li>
+                    <li><a href="http://bns.sgamer.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_sgamer&#39;});" class="coop-link">超级玩家</a></li>
+                    <li><a href="http://bns.tgbus.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_tgbus&#39;});" class="coop-link">电玩巴士</a></li>
+                    <li><a href="http://bns.yzz.cn/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_yzz&#39;});" class="coop-link">叶子猪</a></li>
+                    <li><a href="http://bns.aipai.com/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_aipai&#39;});" class="coop-link">爱拍原创视频</a></li>
+                    <li><a href="http://book.qq.com/index.html?g_f=70058" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lside.mt_book&#39;});" class="coop-link">腾讯文学</a></li>
+                </ul>
+            </div>
+            <a class="suggest-box" target="_blank" href="http://bns.qq.com/web201506/download.shtml">
+                <h2 class="suggest-title">推荐配置</h2>
+                <p class="suggest-text"><em>CPU</em>四核及以上</p>
+                <p class="suggest-text"><em>系统</em>WIN7（64位）</p>
+                <p class="suggest-text"><em>内存</em>4 GB以上</p>
+                <p class="suggest-text"><em>显卡</em>NVIDIA Geforce</p>
+                <p class="suggest-text"><em></em>GTX 750</p>
+                <p class="suggest-text"><em></em>GTX 750 Ti</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="nav" id="nav">
+            <ul class="nav-list">
+                <li class="firstopt"><a class="nav-link" href="./官网首页-剑灵官方网站-腾讯游戏_files/官网首页-剑灵官方网站-腾讯游戏.html">首页</a></li>
+                <li><a class="nav-link" target="_blank" href="http://bns.qq.com/act/a20131006audiovisual/graphics.shtml">游戏资料</a></li>
+                <li><a class="nav-link" target="_blank" href="http://bns.qq.com/web201506/download.shtml">下载中心</a></li>
+                <li><a class="nav-link" target="_blank" href="http://helper.qq.com/v2/tool-list.shtml?from=97&gid=bns&tab=0###">自助服务</a></li>
+                <li><a class="nav-link" target="_blank" href="http://bns.gamebbs.qq.com/forum.php">玩家互动</a></li>
+                <li class="bord"><a class="nav-link" target="_blank" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=40012345&f=1&ty=1&ap=000011:400598:|m:11|f:Gjl2">腾讯客服</a></li>
+            </ul>
+            <ul class="naven-list">
+                <li class="firstopt"><span class="fontfix">index</span></li>
+                <li><span class="fontfix">game data</span></li>
+                <li><span class="fontfix">download</span></li>
+                <li><span class="fontfix">self service</span></li>
+                <li><span class="fontfix">interaction</span></li>
+                <li><span class="fontfix">custom service</span></li>
+            </ul>
+            <ul class="navexpand-list pa">
+                <li class="firstopt"></li>
+                <li>
+                    <a class="navexpand-link" target="_top" href="http://bns.qq.com/act/a20131008profession/forcemaster.shtml">游戏特色</a>
+                    <a class="navexpand-link" target="_top" href="http://bns.qq.com/act/a20131008profession/blademaster.shtml">职业介绍</a>
+                    <a class="navexpand-link" target="_top" href="http://bns.qq.com/act/a20131010xinshou/jiaose.shtml#p1">新手指南</a>
+                    <a class="navexpand-link" target="_top" href="http://bang.qq.com/gl/index/bns">帮帮攻略</a>
+                    <a class="navexpand-link" target="_top" href="http://bns.qq.com/cp/a20131008lianzhao/indexsub2.htm">副本攻略</a>
+                </li>
+                <li>
+                    <a class="navexpand-link" href="http://bns.qq.com/web201506/download.shtml" target="_top">下载客户端</a>
+                    <a class="navexpand-link" target="_blank" href="http://bns.qq.com/lab/index.shtml">南天国体验服</a>
+                </li>
+                <li>
+                    <a class="navexpand-link" target="_blank" href="http://bns.qq.com/cp/a20130320mibao/">安全模式</a>
+                    <a class="navexpand-link" target="_blank" href="http://bang.qq.com/gl/zhuanlan/tool/bns">Q游助手</a>
+                    <a class="navexpand-link" target="_blank" href="http://gamesafe.qq.com/number_inquiry.shtml?game_id=42">封停查询</a>
+                    <a class="navexpand-link" target="_blank" href="http://daohao.qq.com/step2.shtml?gid=bns">被盗找回</a>
+                </li>
+                <li>
+                    <a class="navexpand-link" target="_blank" href="http://bns.gamebbs.qq.com/forum.php">洪门论坛</a>
+                    <a class="navexpand-link" target="_blank" href="http://bns.qq.com/act/a20140618sns/index.shtml">灵芝圈社区</a>
+                    <a class="navexpand-link" target="_blank" href="http://e.t.qq.com/bns">剑灵微博</a>
+                    <a class="navexpand-link" target="_blank" href="http://bns.qq.com/act/a20140917jpmp/">门派排行</a>
+                    <a class="navexpand-link" target="_blank" href="http://bns.qq.com/act/a20131031fight/">比武场排行</a>
+                </li>
+                <li class="bord">
+                    <a class="navexpand-link" href="http://crm2.qq.com/page/portalpage/wpa.php?uin=40012345&f=1&ty=1&ap=000011:400598:|m:11|f:Gjl2" target="_blank">在线客服</a>
+                    <a class="navexpand-link" href="http://kf.qq.com/product/BNS.html" target="_blank">客服专区</a>
+                    <a class="navexpand-link" href="http://game.qq.com/contract.shtml" target="_blank">用户协议</a>
+                    <a class="navexpand-link" href="http://bns.qq.com/web201307/tiaoli.shtml" target="_blank">玩家条例</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flash-box pr">
+            <div id="swfcontent" class="flash-content pa"><object id="swfcontent_swf" name="swfcontent_swf" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="1046" height="350"><param name="movie" value="http://ossweb-img.qq.com/images/bns/web201506/main/flash/main0813.swf?v=0.6372097670100629"><param name="base" value=""><param name="wmode" value="transparent"><param name="allowfullscreen" value="true"><param name="allowScriptAccess" value="always"><param name="quality" value="high"><param name="flashvars" value=""><embed id="swfcontent_swf_embed" name="swfcontent_swf_embed" src="http://ossweb-img.qq.com/images/bns/web201506/main/flash/main0813.swf?v=0.6372097670100629" width="1046" height="350" base="" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" quality="high" flashvars="" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object></div>
+        </div>
+        <div class="grid-main" id="grid_wrap_1">
+            <div class="grid2x4 ad-slider pr" id="ad_slider">
+                <div class="slider-pic pa" style="left: -1600px;">
+                    <a href="http://bns.qq.com/cp/a20150813qx/index.html?ADTAG=ied.gameclient.newmain.ad1&atm_cl=ad&atm_pos=11694&e_code=160408" target="_blank" onclick="pgvSendClick({hottag:&#39;main.banner.ada1&#39;});" class="pic-lnk"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439778997994138510.jpg" alt="七夕活动" width="400" height="624"></a>
+                    <a href="http://bns.qq.com/cp/a20150810hbtj/index.html?ADTAG=ied.gameclient.newmain.ad2&atm_cl=ad&atm_pos=11695&e_code=160409" target="_blank" onclick="pgvSendClick({hottag:&#39;main.banner.ada2&#39;});" class="pic-lnk"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439426846610791511.jpg" alt="伙伴图鉴" width="400" height="624"></a>
+                    <a href="http://xinyue.qq.com/act/a20150729zmhp/index.shtml?ADTAG=cop.innercop.xinyue.0813chongzhi&atm_cl=ad&atm_pos=11696&e_code=160410" target="_blank" onclick="pgvSendClick({hottag:&#39;main.banner.ada3&#39;});" class="pic-lnk"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439428454035815543.jpg" alt="心悦" width="400" height="624"></a>
+                    <a href="http://bns.qq.com/cp/a20150713smjd/index.shtml?ADTAG=ied.gameclient.newmain.ad4&atm_cl=ad&atm_pos=11697&e_code=160411" target="_blank" onclick="pgvSendClick({hottag:&#39;main.banner.ada4&#39;});" class="pic-lnk"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1437612603511795255.jpg" alt="宠物预热" width="400" height="624"></a>
+                    <a href="http://bns.qq.com/cp/a20150715welfare/index.shtml?ADTAG=ied.gameclient.newmain.ad5&atm_cl=ad&atm_pos=11698&e_code=160412" target="_blank" onclick="pgvSendClick({hottag:&#39;main.banner.ada5&#39;});" class="pic-lnk"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1437444920013290952.jpg" alt="保卫福利" width="400" height="624"></a>
+                    <a href="http://daoju.qq.com/mall/tao.shtml?flag=bns&atm_cl=ad&atm_pos=11699&e_code=127993" target="_blank" onclick="pgvSendClick({hottag:&#39;main.banner.ada6&#39;});" class="pic-lnk"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439504087871629187.jpg" alt="道聚城" width="400" height="624"></a>
+                </div>
+                <div class="slider-switcher pa">
+                    <span class="switcher-btn allTrans spr"></span>
+                    <span class="switcher-btn allTrans spr"></span>
+                    <span class="switcher-btn allTrans spr"></span>
+                    <span class="switcher-btn allTrans spr"></span>
+                    <span class="switcher-btn allTrans switcher-on spr"></span>
+                    <span class="switcher-btn allTrans spr"></span>
+                </div>
+            </div>
+            <div class="grid2x2 news" id="news">
+                <div class="news-tab">
+                    <ul class="tab-list">
+                        <li class="tab-more">
+                            <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/m11525/list_1.shtml" class="more-link spr ti" target="_blank" onclick="pgvSendClick({hottag:&#39;main.news.more&#39;});" title="点击查看更多新闻">更多</a>
+                        </li>
+                        <li><a href="javascript:void(0);" class="tab-lnk colorTrans tlink-on">全部</a></li>
+                        <li><a href="javascript:void(0);" class="tab-lnk colorTrans">新闻</a></li>
+                        <li><a href="javascript:void(0);" class="tab-lnk colorTrans">公告</a></li>
+                        <li><a href="javascript:void(0);" class="tab-lnk colorTrans">活动</a></li>
+                        <li><a href="javascript:void(0);" class="tab-lnk colorTrans">媒体</a></li>
+                        <li><a href="javascript:void(0);" class="tab-lnk colorTrans">论坛</a></li>
+                    </ul>
+                </div>
+                <div class="news-con" style="display: block;">
+                    <ul class="news-list clearfix">
+                        	<li class="news-hot">
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/371375.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【新闻】七夕怎么过？搭鹊桥领520W感恩大礼！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/369677.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/18</span>【新闻】小伙伴的见面礼！天照伙伴、NPC冠名好礼充值送</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/369715.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/18</span>【活动】集齐伙伴领称号，伙伴图鉴开放</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/371679.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【媒体】766：剑灵七夕送不停 超值好礼送送送！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/371677.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【媒体】PCgames：佳节缘定剑灵 七夕节专题</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/371676.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【媒体】52PK：缘定七夕!截图秀恩爱赢Q币礼包大奖</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/371673.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【活动】星云武器启程，神兵图录来了！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/371628.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【公告】电信网络波动公告</a>
+	</li>
+<!--[if !IE]>|xGv00|e3d2b70399e9800cf580c34891d43d53<![endif]-->
+                    </ul>
+                </div>
+                <div class="news-con" style="display: none;">
+                    <ul class="news-list clearfix">
+                        	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/371375.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【新闻】七夕怎么过？搭鹊桥领520W感恩大礼！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/369677.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/18</span>【新闻】小伙伴的见面礼！天照伙伴、NPC冠名好礼充值送</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/370565.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【新闻】共贺伙伴系统，合作媒体福利集合</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/369587.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【新闻】福利大派送，超萌小伙伴签到领！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/369538.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【新闻】“感动剑灵，年度伙伴大晒”三、四期获奖者公布</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/369425.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/12</span>【新闻】《剑灵》第二届服装设计大赛结果公布</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/369104.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/11</span>【新闻】来自小伙伴的约定！8月版本更新前瞻</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/368025.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/08</span>【新闻】【致全体灵芝】白青一年，感恩有你</a>
+	</li>
+<!--[if !IE]>|xGv00|fd5b93537f531ced57a2ff32162cacfe<![endif]-->
+                    </ul>
+                </div>
+                <div class="news-con" style="display: none;">
+                    <ul class="news-list clearfix">
+                        	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/371628.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【公告】电信网络波动公告</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/371355.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/19</span>【公告】8月20日8:00全区全服停机维护公告</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/370979.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/18</span>【公告】8月13日晚间维护福利回馈公告</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/370240.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/15</span>【公告】电信网络波动公告</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/369778.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【公告】8月13日23：00全区全服停机维护公告</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/369712.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【公告】心悦共赢壕礼活动排行榜奖励领取BUG的处理公告</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/369671.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【公告】网通部分大区服务器或将停机维护公告</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15030/m11526/201508/369636.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【公告】部分大区服务器异常公告</a>
+	</li>
+<!--[if !IE]>|xGv00|eec75e82904ad07997b550cd0f2c55d0<![endif]-->
+                    </ul>
+                </div>
+                <div class="news-con" style="display: none;">
+                    <ul class="news-list clearfix">
+                        	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/371375.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【活动】七夕怎么过？搭鹊桥领520W感恩大礼！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/369677.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/18</span>【活动】小伙伴的见面礼！天照伙伴、NPC冠名好礼充值送</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/369715.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/18</span>【活动】集齐伙伴领称号，伙伴图鉴开放</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/371673.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【活动】星云武器启程，神兵图录来了！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/369733.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【活动】新老灵芝共贺！粉色企鹅朵朵的盛夏好礼</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/369538.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【活动】“感动剑灵，年度伙伴大晒”三、四期获奖者公布</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/368380.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/10</span>【活动】玩剑灵手游 送剑灵永久时装-夏日海滩</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15031/m11526/201508/367591.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/06</span>【活动】"感动剑灵，年度伙伴大晒"第二期获奖者公布！</a>
+	</li>
+<!--[if !IE]>|xGv00|eae51b28d6bf9c45b2d1c6bfeb425051<![endif]-->
+                    </ul>
+                </div>
+                <div class="news-con" style="display: none;">
+                    <ul class="news-list clearfix">
+                        	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/371679.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【媒体】766：剑灵七夕送不停 超值好礼送送送！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/371677.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【媒体】PCgames：佳节缘定剑灵 七夕节专题</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/371676.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【媒体】52PK：缘定七夕!截图秀恩爱赢Q币礼包大奖</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/371451.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/20</span>【媒体】17173：七夕有些话，我想对你说。。。</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/369625.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【媒体】17173：萌即是正义 伙伴系统专题</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/369591.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【媒体】766：萌宠驾到 喂养攻略抢先看</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/369590.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【媒体】131：晒出身边萌宠 你的最爱是天照小黑吗</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15032/m11526/201508/369535.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【媒体】17173玩家设计！《剑灵》女仆时装上线</a>
+	</li>
+<!--[if !IE]>|xGv00|0f4233f4037750c667460e973d59494a<![endif]-->
+                    </ul>
+                </div>
+                <div class="news-con" style="display: none;">
+                    <ul class="news-list clearfix">
+                        	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15033/m11526/201508/368243.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/08</span>【论坛】召唤伙伴，回忆我们一起看过的白青初雪</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15033/m11526/201508/366710.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/05</span>【论坛】【夕木酱】有事CH聊，聊聊4号的维护以及八月更新</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15033/m11526/201508/366228.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/03</span>【论坛】【TSHF】6把S1遗忘墓地3分30秒成就攻略</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15033/m11526/201507/364374.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/30</span>【论坛】【TSHF】LR2流冰系气功低属性无秘籍陆孙参考视频</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15033/m11526/201507/362457.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/27</span>【论坛】大神召集令！写攻略赚Q币，秦义绝手办抱回家！</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15033/m11526/201507/361711.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/17</span>【论坛】【夕木酱】有事CH聊，下周某日全区全服更新公告</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15033/m11526/201507/361298.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/16</span>【论坛】【MVP】万物有灵版本灵剑风雷使用技巧</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15033/m11526/201507/361064.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/15</span>【论坛】【夕木酱】有事CH聊，一起聊聊后续的优化吧~</a>
+	</li>
+<!--[if !IE]>|xGv00|44767c89421be9ee529a08660199cea5<![endif]-->
+                    </ul>
+                </div>
+            </div>
+            <div class="grid1x2 version pr">
+                <div class="version-lnks pa" id="verlnks">
+                    <a class="version-lnk version-lnk-on" href="http://bns.qq.com/act/a20150527ver/inner_1.htm?ADTAG=ied.gameclient.newmain.adbb1&atm_cl=ad&atm_pos=11709&e_code=127284" target="_blank" onclick="pgvSendClick({hottag:&#39;main.versionbanner.vb1&#39;});" style="display: block;"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435863200169968564.jpg" alt="副本" width="192" height="304"></a>
+                    <a class="version-lnk" href="http://bns.qq.com/act/a20150527ver/inner_4.htm?ADTAG=ied.gameclient.newmain.adbb2&atm_cl=ad&atm_pos=11710&e_code=127285" target="_blank" onclick="pgvSendClick({hottag:&#39;main.versionbanner.vb2&#39;});" style="display: none;"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435110228315618486.jpg" alt="pvp" width="192" height="304"></a>
+                    <a class="version-lnk" href="http://bns.qq.com/act/a20150527ver/inner_2.htm?ADTAG=ied.gameclient.newmain.adbb3&atm_cl=ad&atm_pos=11711&e_code=127286" target="_blank" onclick="pgvSendClick({hottag:&#39;main.versionbanner.vb3&#39;});" style="display: none;"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435110270385539373.jpg" alt="武器" width="192" height="304"></a>
+                    <a class="version-lnk" href="http://bns.qq.com/act/a20150527ver/inner_5.htm?ADTAG=ied.gameclient.newmain.adbb4&atm_cl=ad&atm_pos=11712&e_code=127287" target="_blank" onclick="pgvSendClick({hottag:&#39;main.versionbanner.vb4&#39;});" style="display: none;"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435110160345765478.jpg" alt="属性" width="192" height="304"></a>
+                </div>
+                <div class="version-tabs pa" id="vertabs">
+                    <i class="version-tab version-tab-on">副本</i><span>|</span><i class="version-tab">PVP</i><span>|</span><i class="version-tab">武器</i><span>|</span><i class="version-tab">属性</i>
+                </div>
+            </div>
+            <div class="grid1x2 pr" grid-type="3">
+                <div class="crcode" grid-type="4" style="display: none;">
+                    
+                </div>
+            <div class="slider-pic grid-slider pa" style="display: block; left: -384px;"><a class="pic-lnk" href="http://bns.qq.com/cp/a20150810hbtj/index.html?ADTAG=ied.gameclient.newmain.cg1&atm_cl=ad&atm_pos=11706&e_code=159093" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_long.fbl1&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439430062486294094.jpg" alt="图鉴" width="192" height="304"></a><a class="pic-lnk" href="http://xinyue.qq.com/act/a20150729zmhp/index.shtml?ADTAG=cop.innercop.xinyue.0813chongzhi&atm_cl=ad&atm_pos=11707&e_code=157969" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_long.fbl2&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439430247131524351.jpg" alt="心悦" width="192" height="304"></a><a class="pic-lnk" href="http://bns.qq.com/cp/a20150527fzds/hjzp.shtml?ADTAG=ied.gameclient.newmain.cg3&atm_cl=ad&atm_pos=11708&e_code=153910" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_long.fbl3&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439344882755056538.jpg" alt="服装大赛" width="192" height="304"></a></div><div class="slider-switcher grid-slider pa" style="display: block;"><span class="switcher-btn allTrans spr"></span><span class="switcher-btn allTrans spr"></span><span class="switcher-btn allTrans switcher-on spr"></span></div></div>
+            <div class="grid1x1" grid-type="1" id="test" style="display: none;">
+                
+            </div>
+            <div class="grid1x1" grid-type="1" style="display: none;">
+                
+            </div>
+            <div class="grid1x2 ecenter">
+                <a class="pic-lnk" href="http://bns.qq.com/web201506/event.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_long.ecenter&#39;});">
+                    <img src="./官网首页-剑灵官方网站-腾讯游戏_files/ecenter.jpg" width="100%" height="100%" alt="">
+                </a>
+            </div>
+            <div class="grid1x2" grid-type="0">
+                <div class="grid1x1 inner-grid" grid-type="1" style="display: none;">
+                    
+                </div>
+                <div class="grid1x1 inner-grid" grid-type="1" style="display: none;">
+                    
+                </div>
+            <div class="grid1x1 inner-grid"><div class="slider-pic grid-slider pa" style="display: block; left: -384px;"><a class="pic-lnk" href="http://bns.qq.com/act/a20131205intro/index.shtml?ADTAG=ied.gameclient.newmain.adng1&atm_cl=ad&atm_pos=11700&e_code=127780" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_short.fbs1&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435634039644860166.jpg" alt="新手福利" width="192" height="144"></a><a class="pic-lnk" href="http://bns.qq.com/cp/a20150813qx/index.html?atm_cl=ad&atm_pos=11701&e_code=160473" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_short.fbs2&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1440024723351420866.jpg" alt="七夕" width="192" height="144"></a><a class="pic-lnk" href="http://bns.qq.com/cp/a20150713smjd/index.shtml?ADTAG=ied.gameclient.newmain.ng3&atm_cl=ad&atm_pos=11702&e_code=158921" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_short.fbs3&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1438042863777045235.jpg" alt="三萌驾到" width="192" height="144"></a></div><div class="slider-switcher grid-slider pa" style="display: block;"><span class="switcher-btn allTrans spr"></span><span class="switcher-btn allTrans spr"></span><span class="switcher-btn allTrans switcher-on spr"></span></div></div><div class="grid1x1 inner-grid"><div class="slider-pic grid-slider pa" style="display: block; left: -192px;"><a class="pic-lnk" href="http://bns.qq.com/act/a20150805summer/index.shtml?ADTAG=cop.innercop.qqvip.0813bns&atm_cl=ad&atm_pos=11703&e_code=160522" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_short.fbs4&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1440035966480791404.jpg" alt="会员" width="192" height="144"></a><a class="pic-lnk" href="http://bns.qq.com/cp/a20150804hbxt/index.html?ADTAG=ied.gameclient.newmain.mg2&atm_cl=ad&atm_pos=11704&e_code=158056" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_short.fbs5&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1438911096313272064.jpg" alt="版本" width="192" height="144"></a><a class="pic-lnk" href="http://bns.qq.com/webplat/info/news_version3/1298/15027/15029/m11526/201508/370565.shtml?atm_cl=ad&atm_pos=11705&e_code=160053" target="_blank" onclick="pgvSendClick({hottag:&#39;main.fixbanner_short.fbs6&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439861487997914842.jpg" alt="媒体" width="192" height="144"></a></div><div class="slider-switcher grid-slider pa" style="display: block;"><span class="switcher-btn allTrans spr"></span><span class="switcher-btn allTrans spr"></span><span class="switcher-btn allTrans switcher-on spr"></span></div></div></div>
+            <div class="grid1x2" grid-type="0" style="display: none;">
+                <div class="grid1x1 inner-grid" grid-type="1" style="display: none;">
+                    
+                </div>
+                <div class="grid1x1 inner-grid" grid-type="1" style="display: none;">
+                    
+                </div>
+            </div>
+            <div class="grid1x2 weapon" grid-type="4" style="display: none;">
+                
+            </div>
+            <div class="grid1x2 ead" grid-type="4" style="display: none;">
+                
+            </div>
+        </div>
+        <div class="grid-main">
+            <div class="grid-title">
+                <div class="search-field">
+                    <!--<i class="input-submit spr"></i>-->
+                    <!--<input class="search-input" type="text" value=""/>-->
+                    <form action="http://cha.17173.com/bns/search.html" target="_blank" accept-charset="utf-8" onsubmit="document.charset=&#39;utf-8&#39;">
+                            <input type="submit" class="input-submit spr" value="">
+                            <input type="text" name="keyWord" placeholder="17173数据库" value="" class="search-input">
+                    </form>
+                </div>
+                <a class="title-left colorTrans" href="http://bns.qq.com/webplat/info/news_version3/1298/15028/m11528/list_1.shtml" target="_blank"><i class="spr icons icon-new"></i>攻略资讯<i class="ctitle-en">guide and news</i></a>
+            </div>
+            <div class="grid-full" id="guide">
+                <div class="guide-box gbox-on">
+                    <div class="guide-content" style="display:block;">
+                        <ul class="news-list clearfix">
+                            	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15035/m11529/201508/370946.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/18</span>【帮帮攻略】【爆炸灵芝】各职业洪门秘籍获取方法分析</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/370598.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【周边文化】希望之地零基础剑灵美图教学—进阶篇</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/370597.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【周边文化】“咒”是酷炫——来自符咒的华丽表演</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/370595.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【周边文化】?情 囚?---金钗愿 ---?双生姊妹篇之姊</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15036/m11529/201508/370593.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【PK技巧】双钻召唤师万物有灵版本对战各职业操作细谈</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15045/m11529/201508/369583.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【副本攻略】暗黑S2力士3分27秒修罗王 附单刷伊鲁卡</a>
+	</li>
+<!--[if !IE]>|xGv00|7aee4974a2c38b62c14872c6b9a30dfd<![endif]-->
+                        </ul>
+                        <ul class="guide-pics">
+                            <li>
+                                <a class="guide-lnk" href="http://bns.766.com/zt/qx.shtml?atm_cl=ad&atm_pos=11713&e_code=160512" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g11&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1440034616468198505.jpg" alt="766" width="184" height="96"></a>
+                            </li>
+                            <li class="nobord">
+                                <a class="guide-lnk" href="http://bns.pcgames.com.cn/543/zt5430942.html?atm_cl=ad&atm_pos=11714&e_code=160513" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g12&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1440034699365322179.jpg" alt="PCG" width="184" height="96"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guide-pic allTrans pr">
+                        <img src="./官网首页-剑灵官方网站-腾讯游戏_files/gpic_1.png" width="125" height="302" class="guide-pic-img" alt="">
+                        <i class="gpic-cover allTrans pa"></i>
+                    </div>
+                </div>
+                <div class="guide-box">
+                    <div class="guide-content">
+                        <ul class="news-list clearfix">
+                            	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15034/m11529/201508/367159.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/05</span>【装备养成】太平洋：暗黑气功单刷4人雪玉宫 伊鲁卡教学</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15034/m11529/201507/356418.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/02</span>【装备养成】八卦牌同步韩服全职业新八卦展示</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15034/m11529/201506/354539.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">06/24</span>【装备养成】恶女灵剑哪里刷 详解武器幻化祭品剑系类掉落</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15034/m11529/201506/354538.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">06/24</span>【装备养成】刺客改版变化巨大 超神职业八卦牌可能被和谐</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15034/m11529/201506/354519.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">06/24</span>【装备养成】新版传说首饰抢先预览 新增自然属性伤害效果</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15034/m11529/201506/354513.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">06/24</span>【装备养成】武器幻化教学及专门幻化武器外形展示</a>
+	</li>
+<!--[if !IE]>|xGv00|9b42eaff3ef82286c204781406672899<![endif]-->
+                        </ul>
+                        <ul class="guide-pics">
+                            <li>
+                                <a class="guide-lnk" href="http://bns.17173.com/act/qx.shtml?atm_cl=ad&atm_pos=11715&e_code=160507" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g21&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1440034473609600538.jpg" alt="17173" width="184" height="96"></a>
+                            </li>
+                            <li class="nobord">
+                                <a class="guide-lnk" href="http://bns.52pk.com/huodong/19/?atm_cl=ad&atm_pos=11716&e_code=160508" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g22&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1440034535012215734.jpg" alt="52PK" width="184" height="96"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guide-pic allTrans pr">
+                        <img src="./官网首页-剑灵官方网站-腾讯游戏_files/gpic_2.png" width="125" height="302" class="guide-pic-img" alt="">
+                        <i class="gpic-cover allTrans pa"></i>
+                    </div>
+                </div>
+                <div class="guide-box">
+                    <div class="guide-content">
+                        <ul class="news-list clearfix">
+                            	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15035/m11529/201508/370946.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/18</span>【帮帮攻略】【爆炸灵芝】各职业洪门秘籍获取方法分析</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15035/m11529/201508/367481.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/06</span>【帮帮攻略】【爆炸灵芝】各路资讯重磅来袭 宠物你看了吗？</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15035/m11529/201508/366241.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/03</span>【帮帮攻略】【南天速递】7月31日南天国更新，仙丹产出增加</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15035/m11529/201507/364416.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/27</span>【帮帮攻略】【刺客加点】万物有灵比武场技能加点以及分析</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15035/m11529/201507/363670.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/24</span>【帮帮攻略】爆炸灵芝十八期：2015泳装发布 剑士飞黄腾达全录</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15035/m11529/201507/362896.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/22</span>【帮帮攻略】车轮战&amp;升龙谷打法入门</a>
+	</li>
+<!--[if !IE]>|xGv00|8d652909251254e51658b5f9683a14c5<![endif]-->
+                        </ul>
+                        <ul class="guide-pics">
+                            <li>
+                                <a class="guide-lnk" href="http://bns.tgbus.com/zt/813chongwu/?atm_cl=ad&atm_pos=11717&e_code=160066" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g31&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439863122130429503.jpg" alt="电玩巴士" width="184" height="96"></a>
+                            </li>
+                            <li class="nobord">
+                                <a class="guide-lnk" href="http://act.131qz.com/topic/bns/150804/?atm_cl=ad&atm_pos=11718&e_code=160067" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g32&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439863154303981238.jpg" alt="131" width="184" height="96"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guide-pic allTrans pr">
+                        <img src="./官网首页-剑灵官方网站-腾讯游戏_files/gpic_3.png" width="125" height="302" class="guide-pic-img" alt="">
+                        <i class="gpic-cover allTrans pa"></i>
+                    </div>
+                </div>
+                <div class="guide-box">
+                    <div class="guide-content">
+                        <ul class="news-list clearfix">
+                            	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15045/m11529/201508/369583.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/13</span>【副本攻略】暗黑S2力士3分27秒修罗王 附单刷伊鲁卡</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15045/m11529/201508/367995.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/07</span>【副本攻略】无伤单刷困难模式海盗船大BOSS</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15045/m11529/201508/366328.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/03</span>【副本攻略】六把S1武器3分30秒狂暴大圣 速杀成就Get</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15045/m11529/201507/365921.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/31</span>【副本攻略】祝福S1气功师极速击杀困难海盗船塔伊坎</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15045/m11529/201507/364387.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/27</span>【副本攻略】4人困难模式雪玉宫 召唤流星武器单挑修罗王</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15045/m11529/201507/362039.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/20</span>【副本攻略】3分08秒击杀狂暴大圣实录 召唤自杀凝视视角</a>
+	</li>
+<!--[if !IE]>|xGv00|fc7a7194fc725c59474087e89ebdb5a8<![endif]-->
+                        </ul>
+                        <ul class="guide-pics">
+                            <li>
+                                <a class="guide-lnk" href="http://bns.766.com/news/08122015/103141393_1.shtml?atm_cl=ad&atm_pos=11719&e_code=160071" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g41&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439863333388484077.jpg" alt="766" width="184" height="96"></a>
+                            </li>
+                            <li class="nobord">
+                                <a class="guide-lnk" href="http://bns.17173.com/act/cwzt.shtml?atm_cl=ad&atm_pos=11720&e_code=160072" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g42&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439863356916964167.jpg" alt="17173" width="184" height="96"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guide-pic allTrans pr">
+                        <img src="./官网首页-剑灵官方网站-腾讯游戏_files/gpic_4.png" width="125" height="302" class="guide-pic-img" alt="">
+                        <i class="gpic-cover allTrans pa"></i>
+                    </div>
+                </div>
+                <div class="guide-box">
+                    <div class="guide-content">
+                        <ul class="news-list clearfix">
+                            	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15036/m11529/201508/370593.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【PK技巧】双钻召唤师万物有灵版本对战各职业操作细谈</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15036/m11529/201508/367995.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/07</span>【PK技巧】无伤单刷困难模式海盗船大BOSS</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15036/m11529/201507/361906.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/17</span>【PK技巧】游戏快问：钻石级专家亲授PK技巧</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15036/m11529/201507/356157.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/01</span>【PK技巧】七彩：6V6升龙谷战场模式 激情实况解说</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15036/m11529/201506/354530.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">06/24</span>【PK技巧】大V解说：剑灵拳师改版翔龙探海PVP解析</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15036/m11529/201506/354529.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">06/24</span>【PK技巧】剑灵七彩：万物有灵版召唤师PVE加点详解</a>
+	</li>
+<!--[if !IE]>|xGv00|d6ceb4b04fd44b9b326e8df431a71970<![endif]-->
+                        </ul>
+                        <ul class="guide-pics">
+                            <li>
+                                <a class="guide-lnk" href="http://bns.pcgames.com.cn/540/zt5408240.html?atm_cl=ad&atm_pos=11721&e_code=160509" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g51&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439862164557778817.jpg" alt="太平洋" width="184" height="96"></a>
+                            </li>
+                            <li class="nobord">
+                                <a class="guide-lnk" href="http://bns.178.com/zt/huoban/index.html?atm_cl=ad&atm_pos=11722&e_code=160510" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g52&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439862208340969420.jpg" alt="178" width="184" height="96"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guide-pic allTrans pr">
+                        <img src="./官网首页-剑灵官方网站-腾讯游戏_files/gpic_5.png" width="125" height="302" class="guide-pic-img" alt="">
+                        <i class="gpic-cover allTrans pa"></i>
+                    </div>
+                </div>
+                <div class="guide-box">
+                    <div class="guide-content">
+                        <ul class="news-list clearfix">
+                            	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15037/m11529/201508/369206.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/12</span>【技能详解】万物有灵版本召唤师pvp加点之我见</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15037/m11529/201507/358187.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/09</span>【技能详解】刺客PVE加点与叠毒卡刀教学手册</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15037/m11529/201507/357932.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/08</span>【技能详解】万物有灵版力士PVE加点详解</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15037/m11529/201507/357611.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/07</span>【技能详解】召唤师首饰属性选择推荐</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15037/m11529/201507/356421.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/02</span>【技能详解】气功PVE PVP 新版加点教学</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15037/m11529/201507/356412.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/02</span>【技能详解】新版本咒术师黑炎龙输出手法教学</a>
+	</li>
+<!--[if !IE]>|xGv00|782157821d790b4a0720960059ea3298<![endif]-->
+                        </ul>
+                        <ul class="guide-pics">
+                            <li>
+                                <a class="guide-lnk" href="http://bns.52pk.com/huodong/18/?atm_cl=ad&atm_pos=11723&e_code=160514" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g61&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439861712288510565.jpg" alt="52pk" width="184" height="96"></a>
+                            </li>
+                            <li class="nobord">
+                                <a class="guide-lnk" href="http://games.sina.com.cn/o/z/bns/zt/hbxtzt.shtml?atm_cl=ad&atm_pos=11724&e_code=127299" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g62&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1439862098897516497.jpg" alt="新浪" width="184" height="96"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guide-pic allTrans pr">
+                        <img src="./官网首页-剑灵官方网站-腾讯游戏_files/gpic_6.png" width="125" height="302" class="guide-pic-img" alt="">
+                        <i class="gpic-cover allTrans pa"></i>
+                    </div>
+                </div>
+                <div class="guide-box">
+                    <div class="guide-content">
+                        <ul class="news-list clearfix">
+                            	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15038/m11529/201507/363715.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/24</span>【新手必读】巧用护卫灵 祝福S1灵剑6分33秒吊打修罗王</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15038/m11529/201507/362040.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/20</span>【新手必读】祝福暗黑冰系1段首饰气功单刷雪玉宫老二</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15038/m11529/201507/360337.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/13</span>【新手必读】17173剑灵物价分析局第二版第九期</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15038/m11529/201507/358188.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/09</span>【新手必读】最强爆发!新版灵剑士雷系输出手法详解</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15038/m11529/201507/357609.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">07/07</span>【新手必读】爆表输出!新版气功师冰系输出手法教学</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15038/m11529/201506/354534.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">06/24</span>【新手必读】梦想启航之旅：剑灵创意大赛优秀作品点评</a>
+	</li>
+<!--[if !IE]>|xGv00|671a2a4c2f54cea5fdb2cb68ea848d63<![endif]-->
+                        </ul>
+                        <ul class="guide-pics">
+                            <li>
+                                <a class="guide-lnk" href="http://bns.tgbus.com/zt/630zt/?atm_cl=ad&atm_pos=11725&e_code=127300" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g71&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435123402630565645.jpg" alt="电玩巴士" width="184" height="96"></a>
+                            </li>
+                            <li class="nobord">
+                                <a class="guide-lnk" href="http://bns.52pk.com/fbsp/6453556.shtml?atm_cl=ad&atm_pos=11726&e_code=127301" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g72&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435123429740047488.jpg" alt="52pk" width="184" height="96"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guide-pic allTrans pr">
+                        <img src="./官网首页-剑灵官方网站-腾讯游戏_files/gpic_7.png" width="125" height="302" class="guide-pic-img" alt="">
+                        <i class="gpic-cover allTrans pa"></i>
+                    </div>
+                </div>
+                <div class="guide-box">
+                    <div class="guide-content">
+                        <ul class="news-list clearfix">
+                            	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/370598.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【周边文化】希望之地零基础剑灵美图教学—进阶篇</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/370597.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【周边文化】“咒”是酷炫——来自符咒的华丽表演</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/370595.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/17</span>【周边文化】?情 囚?---金钗愿 ---?双生姊妹篇之姊</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/369209.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/12</span>【周边文化】「 阿漫 」-「 人女 」- 白素。</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/369208.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/12</span>【周边文化】『KITTYLADY』被浊气污染的黑枪族部落</a>
+	</li>
+	<li>
+        <a href="http://bns.qq.com/webplat/info/news_version3/1298/15028/15039/m11529/201508/369207.shtml" style="color:;" class="news-lnk" target="_blank"><span class="news-date">08/12</span>【周边文化】天族捏人-『 花开花落人如旧 谁道容颜不及花 』</a>
+	</li>
+<!--[if !IE]>|xGv00|2b907089b06030d47cfe1b2427f9e308<![endif]-->
+                        </ul>
+                        <ul class="guide-pics">
+                            <li>
+                                <a class="guide-lnk" href="http://bns.tgbus.com/zt/630zt/?atm_cl=ad&atm_pos=11744&e_code=127309" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g81&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435123477906975248.jpg" alt="电玩巴士" width="184" height="96"></a>
+                            </li>
+                            <li class="nobord">
+                                <a class="guide-lnk" href="http://bns.52pk.com/fbsp/6453556.shtml?atm_cl=ad&atm_pos=11745&e_code=127310" target="_blank" onclick="pgvSendClick({hottag:&#39;main.guidead.g82&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435123459473115968.jpg" alt="52pk" width="184" height="96"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="guide-pic allTrans pr">
+                        <img src="./官网首页-剑灵官方网站-腾讯游戏_files/gpic_8.png" width="125" height="302" class="guide-pic-img" alt="">
+                        <i class="gpic-cover allTrans pa"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-main" id="grid_wrap_3">
+            <div class="grid-title">
+                <a class="title-left colorTrans" href="http://bns.qq.com/act/a20140618sns/index.shtml" target="_blank"><i class="spr icons icon-sns"></i>灵芝圈社区<i class="ctitle-en">community</i></a>
+            </div>
+            <div class="grid2x2 grid-video" id="video_con">
+                <a class="video-lnk" href="javascript:bns.Script.videoInit('b016251wcit');" onclick="pgvSendClick({hottag:&#39;main.video.large&#39;});" target="_blank"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435104385485000516.jpg" alt="视频" width="400" height="304"></a>
+            </div>
+            <div class="grid1x2 community pr">
+                <a class="community-lnk" href="http://bns.qq.com/act/a20140618sns/index.shtml?atm_cl=ad&atm_pos=11729&e_code=127304" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lzq.longad&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435194547230061514.jpg" alt="灵芝圈" width="192" height="304"></a>
+            </div>
+            <div class="grid1x2">
+                <div class="grid1x1 inner-grid community pr">
+                    <a class="community-lnk" href="http://bns.qq.com/cp/a20150527fzds/index.shtml?atm_cl=ad&atm_pos=11730&e_code=127305" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lzq.squaread1&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435194565591271868.jpg" alt="服装大赛" width="192" height="144"></a>
+                </div>
+                <div class="grid1x1 inner-grid community pr">
+                    <a class="community-lnk" href="http://bns.qq.com/act/a2014comic/index.shtml?atm_cl=ad&atm_pos=11731&e_code=127306" target="_blank" onclick="pgvSendClick({hottag:&#39;main.lzq.squaread2&#39;});"><img src="./官网首页-剑灵官方网站-腾讯游戏_files/1435194583316977406.jpg" alt="剑灵动画" width="192" height="144"></a>
+                </div>
+            </div>
+            <div class="grid1x2 commu-lnks pr" grid-type="5">
+                <div grid-type="6">
+                    <a class="pic-lnk commu-lnk" href="http://bns.qq.com/cp/a20150312cartoon/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.outlink.olink1&#39;});">
+                        <img class="commulnk-pic" src="./官网首页-剑灵官方网站-腾讯游戏_files/commulnk_1.jpg" width="100%" alt="">
+                        <p class="commu-name">咒术师诞生记</p>
+                        <i class="commu-btn allTrans">剑灵漫画</i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid1x2 commu-lnks" grid-type="6">
+                <a class="pic-lnk commu-lnk" href="http://bns.qq.com/web201307/screen.shtml?type=131072" target="_blank" onclick="pgvSendClick({hottag:&#39;main.outlink.olink2&#39;});">
+                    <img class="commulnk-pic" src="./官网首页-剑灵官方网站-腾讯游戏_files/commulnk_2.jpg" width="100%" alt="">
+                    <p class="commu-name">剑灵视觉盛宴</p>
+                    <i class="commu-btn">美图欣赏</i>
+                </a>
+            </div>
+            <div class="grid1x2 commu-lnks commu-video">
+                <a class="pic-lnk commu-lnk" href="http://bns.qq.com/cp/a20130606videoarea/?type=65536" target="_blank" onclick="pgvSendClick({hottag:&#39;main.outlink.video&#39;});">
+                    <img class="commulnk-pic" src="./官网首页-剑灵官方网站-腾讯游戏_files/commulnk_3.jpg" width="100%" alt="">
+                    <p class="commu-name">精彩视频欣赏</p>
+                    <i class="commu-btn">视频中心</i>
+                </a>
+            </div>
+        </div>
+        <div class="grid-main grid-main-btm pr">
+            <div class="grid-title">
+                <a class="title-left colorTrans" href="http://bns.qq.com/web201506/version.shtml" target="_blank"><i class="spr icons icon-ver"></i>版本中心<i class="ctitle-en">version center</i></a>
+            </div>
+            <div class="version-box pr" id="version_box">
+                <ul class="version-list pr" id="version_list" style="left: -446.855199222546px;">
+                    <li class="first-ver">
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20131114ver/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver1&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_1.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">开放测全新版本</p>
+                        <p class="version-time">2013.11</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20131231hpl/" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver2&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_2.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">火炮兰巨星登场</p>
+                        <p class="version-time">2014.1</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20140305ver/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver3&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_3.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">躁动荷尔蒙激情擂台</p>
+                        <p class="version-time">2014.3</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20140416fdl/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver4&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_4.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">绿色毒风暴</p>
+                        <p class="version-time">2014.4</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20140507ver/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver5&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_5.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">首部资料片刺金传说</p>
+                        <p class="version-time">2014.5</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20140711topic/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver6&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_6.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">白青公测</p>
+                        <p class="version-time">2014.8</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20140916version/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver7&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_7.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">战至狂欢</p>
+                        <p class="version-time">2014.10</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20141114firework/index.shtml" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver8&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_8.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">1ST灵芝派对</p>
+                        <p class="version-time">2014.11</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20141219career/index.htm" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver9&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_9.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">咒术师登场</p>
+                        <p class="version-time">2015.1</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20150302fzpy/index.htm" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver10&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_10.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">夜幕下的风之平原</p>
+                        <p class="version-time">2015.3</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20150417qing/index.htm" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver11&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_11.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">晴</p>
+                        <p class="version-time">2015.4</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20150515ver/index.htm" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver12&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_12.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">风</p>
+                        <p class="version-time">2015.5</p>
+                    </li>
+                    <li>
+                        <a class="version-pic pr" href="http://bns.qq.com/act/a20150527ver/index.htm" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.ver13&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_13.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">万物有灵</p>
+                        <p class="version-time">2015.6</p>
+                    </li>
+                    <li class="nobord">
+                        <a class="version-pic pr" href="javascript:alert('敬请期待')" target="_blank" onclick="pgvSendClick({hottag:&#39;main.verlist.verlast&#39;});">
+                            <img class="version-img allTrans pa" src="./官网首页-剑灵官方网站-腾讯游戏_files/vpic_plus.jpg" width="100%" height="100%" alt="">
+                            <i class="version-cover spr pa"></i>
+                        </a>
+                        <p class="version-name">敬请期待</p>
+                    </li>
+                </ul>
+                <div class="line-bg spr pa"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-main">
+        <div class="foot-logo">
+            <a class="tglogo spr" href="http://ieg.tencent.com/" target="_blank" title="腾讯互动娱乐"></a>
+            <span class="nclogo spr"></span>
+        </div>
+        <div class="foot-text">
+            <p>
+                <a href="http://ieg.tencent.com/" target="_blank">腾讯互动娱乐</a><span class="foot-split">|</span><a href="http://game.qq.com/contract.shtml" target="_blank">服务条款</a><span class="foot-split">|</span><a href="http://adver.qq.com/" target="_blank">广告服务</a><span class="foot-split">|</span><a href="http://game.qq.com/hr/" target="_blank">腾讯游戏招聘</a><span class="foot-split">|</span><a href="http://service.qq.com/" target="_blank">腾讯游戏客服</a><span class="foot-split">|</span><a href="http://game.qq.com/portalpageal2010/business.htm" target="_blank">商务合作</a><span class="foot-split">|</span><a href="http://www.qq.com/" target="_blank">腾讯网</a><span class="foot-split">|</span><a href="http://www.qq.com/map/" target="_blank">网站导航</a>
+            </p>
+            <p><a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank" class="copyright">腾讯公司版权所有</a>Website copyright &#169; 2011 – 2015 TENCENT INC. ALL RIGHTS RESERVED.</p>
+            <p>&#169; 2012 NCSOFT Corporation. All Rights Reserved. Licensed to Tencent Inc. in China</p>
+            <p class="license">文网进字[2013]005号<span class="foot-split">|</span><em><a href="http://game.qq.com/culture.htm" target="_blank">粤网文[2011]0483-070号</a></em><span class="foot-split">|</span>新出审字[2013]298号<span class="foot-split">|</span>ISBN号：978-7-89989-642-6</p>
+        </div>
+    </div>
+</div>
+<!--[if lt IE 9]><script src="http://bns.qq.com/web201506/js/css3-mediaqueries.js"></script><![endif]-->
+<script src="./官网首页-剑灵官方网站-腾讯游戏_files/main_dev.js"></script>
+
+
+<!--[if !IE]>|xGv00|e38cf176d82b081a8b768638ff94e8f6<![endif]--><div class="ost_box ost_bg" id="ost_box" style="position: absolute; top: -500px;"><ul class="ost_inner ost_lsn"><li class="ost_logo ost_h40 ost_fl ost_bg"><a href="http://game.qq.com/?ADTAG=IED.InnerCop.gameWeb.topNav" target="_blank" class="ost_blnk ost_hdn" title="腾讯游戏十周年">腾讯游戏十周年</a></li><li id="ost_g" class="ost_ad ost_h40 ost_fl"><img class="ost_nb" id="ost_go" src="./官网首页-剑灵官方网站-腾讯游戏_files/388645437_68722460_1439955085_230_40.jpg" alt="" style="display: block;"></li><li class="ost_total ost_ml10 ost_fr"><h3 class="ost_title ost_h40" id="ost_t">腾讯游戏排行榜<i class="ost_icon_arrow ost_bg"></i><sup class="ost_icon_reddot" id="ost_rank_v"></sup></h3><div class="ost_pop" id="ost_p" style="display: none;"><iframe id="gameRank" name="gameRank" allowtransparency="true" style="background:transparent;" src="./官网首页-剑灵官方网站-腾讯游戏_files/game_rank.html" width="700" height="465" frameborder="0" scrolling="no"></iframe></div></li><li class="ost_fr ost_log ost_bg" id="ost_log"><ul class="ost_fl ost_lsn ost_info ost_bg ost_h40"><li id="log" class="ost_fl ost_login"><a href="http://ptlogin2.qq.com/pt4_web_jump?daid=37&appid=21000601&pt4_token=&succ_url=http%3A%2F%2Figame%2Eqq%2Ecom%2Fcenter%2Findex%2Ephp%3Ffirst%3D1%26gid%3D61%26ADTAG%3Dgameweb%2Ebns%2Enavigation%2EToCommunity" target="_blank" class="ost_loglnk">官方社区</a></li><li class="ost_fl ost_bg ost_gift"><a class="ost_gifturl ost_loglnk" href="http://ptlogin2.qq.com/pt4_web_jump?daid=37&appid=21000601&pt4_token=&succ_url=http%3A%2F%2Figame%2Eqq%2Ecom%2Fcenter2%2Fgift%2Findex%2Ephp%3Fgid%3D61%26ADTAG%3Dgameweb%2Ebns%2Enavigation%2Egift" target="_blank">礼包</a></li></ul></li></ul><div id="ost_d" class="ost_big" style="display: none;"><a href="http://ac.o2.qq.com/php/click.php?loc_id=119_0d8e2b9df01ce2966bb5d8dd52e865e1&sch_id=238&ad_id=13169&mtr_id=128232&gid=107188&tag=0&link_to=http%3A%2F%2Fyes.qq.com%2Fact%2Fa20150804yjpytj%2Findex.htm%3Ftype%3D4%26ADTAG%3Dmedia.o2qqfree.topbanner.topbannerbigpic.o2-107188.0.128232" target="_blank"><img class="ost_nb" src="./官网首页-剑灵官方网站-腾讯游戏_files/330008126_2131419219_1439955085_970_185.jpg" width="970" height="185" alt=""></a></div></div></body></html>

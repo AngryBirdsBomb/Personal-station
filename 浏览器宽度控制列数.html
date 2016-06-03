@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{list-style:none;maring:0;padding:0;}
+body,ul{overflow:hidden;width:100%;}
+li{width:12.5%;float:left;background:red;height:100px;}
+</style>
+<script>
+window.onload=window.onscroll=window.onresize=function(){
+	function rnd(n,m){
+		return parseInt(n+Math.random()*(m-n));	
+	}	
+	var aLi=document.getElementsByTagName('li');
+	var clientW=document.documentElement.clientWidth;
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].style.background='rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
+		if(clientW<400){
+			aLi[i].style.width=clientW/4+'px';	
+		}
+		else if(clientW>800){
+			aLi[i].style.width=clientW/8+'px';	
+		}
+		else{
+			aLi[i].style.width=clientW/2+'px';	
+		}
+	}
+};
+
+</script>
+</head>
+
+<body>
+<ul>
+	<li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+
+</ul>
+</body>
+</html>

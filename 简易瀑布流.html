@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{padding:0;margin:0;}
+li{list-style:none;border:1px solid #000;margin:10px 0 10px;overflow:hidden;width:100%;}
+ul{width:138px; margin:10px;float:left;}	
+#box{width:966px;margin:0 auto;overflow:hidden;}
+img{width:138px;vertical-align:middle;}
+span{display:inline-block;height:100%;vertical-align:middle;}
+body{height:2000px;}
+</style>
+<script>
+window.onload=function(){
+	function rnd(n,m){
+		return parseInt(n+Math.random()*(m-n));	
+	};	
+	function createLi(){
+		var oS=document.createElement('span');	
+		var oImg=document.createElement('img');
+		var oLi=document.createElement('li');
+		oImg.src='img/b'+rnd(1,11)+'.jpg';
+		oLi.appendChild(oImg);
+		oLi.appendChild(oS);
+		oLi.style.height=rnd(200,300)+'px';
+		return oLi;
+	}
+	function create30(){
+		var arr=[];
+		for(var i=0;i<30;i++){
+			var oLi=createLi();
+			for(var j=0;j<aUl.length;j++){
+				arr.push(aUl[i]);	
+			}
+			arr.sort(function(aUl1,aUl2){
+				return aUl1.offsetHeight-aUl2.offsetHeight;	
+			})
+			arr[0].appendChild(oLi);
+		}
+			
+	}
+	var aUl=document.body.children[0].children;
+	create30();
+	window.onscroll=window.onresize=function(){
+		var scrollT=document.documentElement.scrollTop||document.body.scrollTop;
+		var scrollB=document.documentElement.clientHeight+scrollT;
+		if(scrollB>document.body.scrollHeight-300){
+			create30();	
+		}	
+		
+	};
+};
+
+</script>
+</head>
+
+<body>
+<div id="box">
+	<ul></ul>
+	<ul></ul>
+	<ul></ul>
+    <ul></ul>
+	<ul></ul>
+	<ul></ul>
+</div>
+</body>
+</html>
